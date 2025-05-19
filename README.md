@@ -57,5 +57,5 @@ The system manages **patient contact information** and **appointment scheduling*
 ## 🛠️ How to Compile & Run
 
 ```bash
-gcc clinic.c main.c -o vet_clinic
-./vet_clinic
+gcc -Wall a1ms3.c core.c clinic.c -o ms3
+./ms3
