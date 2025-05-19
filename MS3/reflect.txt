@@ -1,0 +1,106 @@
+/*
+*****************************************************************************
+                        Assignment 1 - Milestone 3
+Full Name  : Yashasvini Bhanuraj
+Student ID#: 164581217
+Email      : ybhanuraj@myseneca.ca
+Section    : NBB
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+*/
+
+Ansewer 1
+
+In this milestone I have created getDate(), getTime(), sortAppointmentArray() and 
+numberOfAppointments(), functions to simplify code and getting required out from the 
+assignment.
+ 
+1. getDate()
+
+This was designed to get the input from the user for the appointment date. The 
+prototype of the function is as flows:
+struct Date getDate() 
+The function gets the input from the user for a date, i.e., year, month and day from 
+the user. The function first gets the year and validates that the user’s entered 
+value is a valid positive integer number. After that, it prompts for the month. 
+Similarly, it validates the month as a positive integer value. Later, the function 
+gets the user input for the day according to year and month. If the year is a leap 
+year, then the second month has 29 days, else 28. This function saves about 100 
+lines of repetitive code from the assignment, and it is significantly used in the 
+code within three functions.  
+
+2. getTime()
+
+This function was designed to get the input from the user for the time. The 
+prototype of the function is as flows:
+struct Time getTime()
+This gets the input from the user for appointment time hour and minute. It also 
+validated that the time is within the hours of the clinic. It uses defined macros to 
+validate the input from the user. It saves about 50 lines of repetitive code from 
+the assignment. The function was used thrice in the code within processes.
+
+3. sortAppointmentArray()
+
+This function was designed to sort the appointment array. the prototype of the 
+function is as follows:
+void sortAppointmentArray(struct Appointment appoint[])
+It gets the array as an argument and modifies it. It sorts the according to the date 
+and time of the appointment. It uses the bubble sort method for sorting. It saves 
+about 300 lines in the code. It is used twice in other functions. This function was 
+the most valuable function in the assignment as it reduced a lot of hurdles in the 
+project from the perspective of length and code. 
+
+
+Ansewr 2
+
+addAppointment function has about four operations to perform. The code consists of 
+70 lines. About 125 lines were saved using different functions implemented as those 
+lines were giving the same input as the other functions defined previously.
+
+The first part is to get the patient number and validate that it is within the 
+patient array and that patient isn’t removed. I have used the 
+findPatientIndexByPatientNum function to validate that the patient number from the 
+user is not removed or is in existence within the patient array. The pattern to find 
+the patient was similar to the pre-existing function findPatientIndexByPatientNum, 
+thusit saved me about 20 lines of code. 
+
+In the next part, I need to get the date and time input for adding an appointment. 
+The pattern was similar to getting the date and time as previously existing 
+functions e.g. getDate and getTime. thus the code was replaced with functions that 
+saved about 80 lines of code. For the “for loop, I need to get the number of 
+appointments existing in the appointment array. Thus, I use another function 
+numberOfAppointments to get the actual number so for the loop can run efficiently.
+
+Next, there was to perform the validation for the appointment that it wasn’t 
+overlapping with another appointment. This process had distinct step from other 
+functions thus the lines wasn’t saved. ultimately, if the appointment wasn’t 
+colliding with any pre-existing appointment then it was set to a safe state.  
+
+
+Answer 3
+
+This milestone demanded the most amount of time in the whole course. To break down 
+the time, I use almost three days if one day equals 8 hours. On the first day, it 
+was started by understanding the demand of the assignment and thinking of the logic 
+of each part, including all the functions. Afterwards, read the course notes and 
+watched the recorded lecture relating to this assignment. The lecture and course 
+notes were helpful to understand the opening and closing of files and importing the 
+data from them into the program. Later, I designed the functions to import the data 
+from the files. It was tricky at first as I imported the files as a string instead 
+of an argument. Later, I figured out the error using the internet. Next, I tried to 
+see the data from the files by designing the display functions. It didn’t go well, 
+but I used the printf statement to find the issue with my code and corrected it. 
+This was the first day. 
+On the second day, the data from files were showing, but it wasn’t in proper order. 
+Thus, I used course notes and lecture recordings to figure out how to sort them out 
+properly and display them as required by the output. Later in the day, I started 
+designing the functions to add the appointment, and there was again there is a lot 
+of repetitive code. I made the functions of them and ran the code for checking 
+against the actual output. There were a number of errors that needed to be 
+corrected. The printf function was handy for correcting those. 
+On the last day, the last function to be designed was for removing the patient. 
+which was a little bit easy as the hardest part was over. 
