@@ -6,16 +6,6 @@ The system manages **patient contact information** and **appointment scheduling*
 
 ---
 
-## 📚 Course Information
-
-- **Course**: BTP144 – C Programming
-- **Instructor**: [Insert Name]
-- **Student**: Yashasvini Bhanuraj
-- **Semester**: [Insert Semester, e.g., Fall 2024]
-- **Weight**: 25% of final grade
-
----
-
 ## 📌 Milestones Overview
 
 ### ✅ Milestone 1 – Helper Functions
